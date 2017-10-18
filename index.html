@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Halloween Game</title>
+<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/libs/underscore.js"></script>
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<script type="text/javascript" src="js/libs/classy.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/towers.js"></script>
+<script type="text/javascript" src="js/enemies.js"></script>
+<script type="text/javascript" src="js/levels.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="game">
+    <div id="viewport" style="position: relative">
+        <canvas id="canvas"></canvas>
+        <div id="hint"></div>
+        <div class="overlay">
+            <div id="loading">
+                Loading...
+                <div id="progress-bar-wrapper">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="panel" style="position: relative">
+        <button id="restart">Restart Level</button>
+        <button id="wave" disabled="disabled" style="margin-bottom: 0">Happy Halloween!</button>
+        <table>
+            <tr><td style="text-align: right">Candy: </td><td><div id="candy" style="display: inline-block; height: 14px; background-image: url('images/candy.png'); background-repeat: repeat-x;"></div></td></tr>
+            <tr><td style="text-align: right">Cash: </td><td>$<span id="cash"></span></td></tr>
+        </table>
+        <div id="towers">
+            <img src="images/towers/jack.png" width="45" data-tower="jack">
+            <img src="images/towers/scarecrow.png" width="45" data-tower="scarecrow">
+            <img src="images/towers/grave.png" width="45" data-tower="grave">
+        </div>
+        <div id="stats">
+            <div class="create">
+                <table style="width: 100%">
+                    <tr><td>Cost: </td><td>$<span class="cost"></span></td></tr>
+                    <tr><td>Range: </td><td><span class="range"></span></td></tr>
+                    <tr><td>Scariness: </td><td><span class="damage"></span></td></tr>
+                    <tr><td colspan="2">Notes: </td></tr>
+                    <tr><td colspan="2"><span class="note"></span></td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+</div>
+<audio id="music" preload loop>
+    <source src="music/spooks_on_parade.ogg" type="audio/ogg">
+</audio>
+</body>
+</html>

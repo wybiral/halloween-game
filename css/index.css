@@ -1,0 +1,184 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #f90;
+    font-family: Julee;
+    overflow: hidden;
+}
+
+#game {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#viewport {
+    display: inline-block;
+    width: 675px;
+}
+
+#candy, .candy-meter {
+    background-image: url('images/candy.png');
+    background-repeat: repeat-x;
+    display: inline-block;
+    height: 14px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.level-select {
+    width: 100%;
+    height: 80px;
+    color: #000;
+    margin: 0;
+    background-color: #555;
+    border: solid 1px #333;
+    cursor: default;
+    display: inline-block;
+}
+
+.level-select:hover {
+    background-color: #555;
+}
+
+.level-select.unlocked {
+    cursor: pointer;
+    background-color: #f90;
+    border: solid 1px #750;
+}
+
+.level-select.unlocked:hover {
+    background-color: #f70;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+}
+
+#viewport .overlay {
+    font-size: 150%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-style: italic;
+}
+
+#loading {
+    margin-top: 200px;
+}
+
+#progress-bar-wrapper {
+    height: 32px;
+    width: 400px;
+    background-color: #950;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#progress-bar {
+    height: 32px;
+    width: 0px;
+    background-color: #f90;
+}
+
+#hint {
+    position: absolute;
+    background-color: #000;
+    border: solid 1px #555;
+    opacity: 0.75;
+    padding: 10px;
+    display: none;
+    font-weight: bold;
+}
+
+#begin {
+    width: 200px;
+    position: absolute;
+    margin-left: -100px;
+    left: 50%;
+    bottom: 10px;
+}
+
+.dialog-buttons {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+}
+
+#panel {
+    background-color: #333;
+    text-align: left;
+    padding: 10px;
+    vertical-align: top;
+    width: 200px;
+    height: 475px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    background-color: #f90;
+    border-radius: 5px;
+    border: solid 1px #750;
+    font-family: 'Creepster', cursive;
+
+}
+
+button:hover {
+    background-color: #f50;
+}
+
+#restart {
+    width: 200px;
+}
+
+#wave {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+#wave[disabled] {
+    background-color: #555;
+}
+
+#upgrade {
+    width: 200px;
+}
+
+#towers {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#towers img {
+    margin: 3px;
+    cursor: pointer;
+}
+
+#towers img.selected {
+    outline: solid 2px #f90;
+}
+
+#stats .create, #stats .upgrade {
+    display: none;
+}
+
